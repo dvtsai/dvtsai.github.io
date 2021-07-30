@@ -1,3 +1,5 @@
+/* Home Page CSS */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -442,6 +444,85 @@
 
 .services2__card {
     margin: 1rem;
+    margin-top: 4rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    position: relative;
+    color: #fff;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+}
+
+.services2__card:nth-child(2) {
+    margin: 1rem;
+    margin-top: 4rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    transform-style: preserve-3d;
+}
+
+.services2 h1 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.services2__card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.services2__card:hover {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.services2__card figure {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services2__card .front {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17, 0.6) 100%), 
+    url('/images/pic3.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.services2__card .back {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17, 0.6) 100%), 
+    url('/images/pic2.jpg');
+    background-size: cover;
+    color: white;
+    transform: rotateY(180deg);
+}
+/* .services2 {
+    background: #808080;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.services2__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services2__card {
+    margin: 1rem;
     margin-top: 1rem;
     height: 525px;
     width: 400px;
@@ -504,7 +585,7 @@
     .services2__card {
         width: 300px;
     }
-}
+} */
 
 /* Footer CSS */
 .footer__container {
@@ -637,6 +718,8 @@
         width: 100%;
     }
 }
+
+
 
 
 
