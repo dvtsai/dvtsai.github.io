@@ -356,12 +356,14 @@
 }
 
 .services__container {
+    perspective: 1000px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .services__card {
+    backface-visibility: hidden;
     margin: 1rem;
     margin-top: 4rem;
     height: 525px;
@@ -373,24 +375,24 @@
     transition: transform 1s ease-in-out;
 }
 
-.services__card:nth-child(2) {
+/* .services__card:nth-child(2) {
     margin: 1rem;
     margin-top: 4rem;
     height: 525px;
     width: 400px;
     border-radius: 4px;
     transform-style: preserve-3d;
-}
+} */
 
 .services h1 {
     position: absolute;
-    top: 350px;
+    top: 400px;
     left: 30px;
 }
 
 .services__card p {
     position: absolute;
-    top: 400px;
+    top: 450px;
     left: 30px;
 }
 
@@ -411,181 +413,66 @@
     flex-direction: column;
 }
 
-.services__card .front {
+/* About card backgrounds */
+.services__container .services__card:nth-child(1) .front {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17, 0.6) 100%), 
-    url('/images/pic3.jpg');
+    url('/images/v1.jpg');
     background-size: cover;
+    background-position: center center;
     color: white;
     text-align: center;
+    transform: rotateY(180deg);
 }
 
-.services__card .back {
+.services__container .services__card:nth-child(1) .back {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17, 0.6) 100%), 
-    url('/images/pic2.jpg');
+    url('/images/adastec.png');
     background-size: cover;
+    background-position: center center;
     color: white;
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
 }
 
-/* Personal and Contact CSS */
-.services2 {
-    background: #808080;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-}
-
-.services2__container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.services2__card {
-    margin: 1rem;
-    margin-top: 4rem;
-    height: 525px;
-    width: 400px;
-    border-radius: 4px;
-    position: relative;
-    color: #fff;
-    transform-style: preserve-3d;
-    transition: transform 1s ease-in-out;
-}
-
-.services2__card:nth-child(2) {
-    margin: 1rem;
-    margin-top: 4rem;
-    height: 525px;
-    width: 400px;
-    border-radius: 4px;
-    transform-style: preserve-3d;
-}
-
-.services2 h1 {
-    position: absolute;
-    top: 350px;
-    left: 30px;
-}
-
-.services2__card p {
-    position: absolute;
-    top: 400px;
-    left: 30px;
-}
-
-.services2__card:hover {
-    transform: rotateY(180deg);
-    cursor: pointer;
-}
-
-.services2__card figure {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    margin: 0;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.services2__card .front {
+/* Projects card backgrounds */
+.services__container .services__card:nth-child(2) .front {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17, 0.6) 100%), 
-    url('/images/pic3.jpg');
+    url('/images/av.png');
     background-size: cover;
+    background-position: center center;
     color: white;
     text-align: center;
-}
-
-.services2__card .back {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17, 0.6) 100%), 
-    url('/images/pic2.jpg');
-    background-size: cover;
-    color: white;
     transform: rotateY(180deg);
 }
-/* .services2 {
-    background: #808080;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-}
 
-.services2__container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.services2__card {
-    margin: 1rem;
-    margin-top: 1rem;
-    height: 525px;
-    width: 400px;
-    border-radius: 4px;
+.services__container .services__card:nth-child(2) .back {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17, 0.6) 100%), 
-    url('/images/pic3.jpg');
+    url('/images/mcity.jpeg');
+    background-size: 120%;
+    background-position: center center;
+    color: white;
+    /* transform: rotateY(180deg); */
+}
+
+/* Teaching card backgrounds */
+.services__container .services__card:nth-child(3) .front {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17, 0.6) 100%), 
+    url('/images/eecs376.png');
     background-size: cover;
-    position: relative;
-    color: #fff;
+    background-position: center center;
+    color: white;
+    text-align: center;
+    transform: rotateY(180deg);
 }
 
-.services2__card:nth-child(2) {
-    margin: 1rem;
-    margin-top: 1rem;
-    height: 525px;
-    width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0, 0) 0%, rgba(17,17,17, 0.6) 100%), 
-    url('/images/pic2.jpg');
+.services__container .services__card:nth-child(3) .back {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17, 0.6) 100%), 
+    url('/images/cse.png');
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    /* transform: rotateY(180deg); */
 }
 
-.services2 h1 {
-    position: absolute;
-    top: 350px;
-    left: 30px;
-}
-
-.services2__card p {
-    position: absolute;
-    top: 400px;
-    left: 30px;
-}
-
-.services2__card:hover {
-    transform: scale(1.075);
-    transition: 0.2s ease-in;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 960px) {
-    .services2 {
-        height: 1600px;
-    }
-
-    .services2 h1 {
-        font-size: 2rem;
-        margin-top: 12rem;
-    }
-}
-
-@media screen and (max-width: 480px){
-    .services2 {
-        height: 1400px;
-    }
-
-    .services2 h1 {
-        font-size: 1.2rem;
-    }
-
-    .services2__card {
-        width: 300px;
-    }
-} */
 
 /* Footer CSS */
 .footer__container {
