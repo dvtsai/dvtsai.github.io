@@ -32,7 +32,8 @@
 
 #navbar__logo {
     background-color: #B0C4DE;
-    background-image: linear-gradient(to top, #191970 0%, #FFFF00 100%);
+    /* background-image: white; */
+    /* background-image: linear-gradient(to top, #191970 0%, #FFFF00 100%); */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -61,7 +62,7 @@
 }
 
 .navbar__links {
-    color: #fff;
+    color: #B0C4DE;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -220,8 +221,8 @@
 
 .main__content h1 {
     font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-color: #B0C4DE;
+    /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -231,8 +232,8 @@
 
 .main__content h2 {
     font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-color: #B0C4DE;
+    /* background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%); */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -244,7 +245,7 @@
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
-    color: #fff;
+    color: #B0C4DE;
 }
 
 .main__btn {
@@ -485,7 +486,7 @@
 }
 
 #footer__logo {
-    color: #fff;
+    color: #B0C4DE;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -519,11 +520,11 @@
 }
 
 .footer__link--items > h2 {
-    color: #fff;
+    color: #B0C4DE;
 }
 
 .footer__link--items a {
-    color: #fff;
+    color: #B0C4DE;
     text-decoration: none;
     margin-bottom: 0.5rem;
 }
@@ -535,7 +536,7 @@
 
 /* Social Icons */
 .social__icon--link {
-    color: #fff;
+    color: #B0C4DE;
     font-size: 24px;
 }
 
@@ -561,7 +562,7 @@
 }
 
 .social__logo {
-    color: #fff;
+    color: #B0C4DE;
     justify-self: flex-start;
     margin-left: 20px;
     cursor: pointer;
@@ -573,7 +574,7 @@
 }
 
 .website__rights {
-    color: #fff;
+    color: #B0C4DE;
 }
 
 @media screen and (max-width: 820px) {
